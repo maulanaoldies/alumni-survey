@@ -61,8 +61,8 @@
 																		<td width="5%">2.1</td>
 																		<td colspan="2" width="60%">Apakah unit kerja saat ini masih sama dengan yang ditempati sejak lulus PHRD IV<br /><span class="desc">Jika <b>Ya</b> lanjut ke pertanyaan no. 2.3</span></td>
 																		<td width="35%">
-																			<input type="radio" id="21_y" value="Ya" name="soal[2]" onChange="disab(21_y,21_n,22)"> YA <br />
-																			<input type="radio" id="21_n" value="Tidak" name="soal[2]" onChange="disab(21_y,21_n,22)"> Tidak
+																			<input type="radio" id="21_y" value="Ya" name="soal[2]" onChange="disab('21_y','21_n','22')"> YA <br />
+																			<input type="radio" id="21_n" value="Tidak" name="soal[2]" onChange="disab('21_y','21_n','22')"> Tidak
 																		</td>
 																	</tr>
 																	<tr id="22">
@@ -671,11 +671,10 @@
 											});
 											
 											function disab(a,b,c){
-												alert(a + ', ' + b + ', ' + c); 
 												if(document.getElementById(a).checked){
-													alert('SELECTED'); //document.getElementById(c).style.display = "none";
+													document.getElementById(c).style.display = "none";
 												}else if(document.getElementById(b).checked){
-													document.getElementById(c).style.display = "block";
+													document.getElementById(c).style.display = "inline";
 												}
 											}
 										</script>
