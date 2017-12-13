@@ -50,7 +50,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <body class=" login">
         <!-- BEGIN LOGO -->
         <div class="logo">
-            <img src="<?php echo base_url();?>assets/img/monev_logo.png" alt="" class="main"/>
+            <img src="<?php echo base_url();?>assets/img/alumni_survey_logo.png" alt="" class="main"/>
         </div>
         <!-- END LOGO -->
         <!-- BEGIN LOGIN -->

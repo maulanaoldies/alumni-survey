@@ -111,7 +111,14 @@ class Kuesioner extends CI_Controller {
 		$data['submit'] = TRUE;
 		
 		$data['p_css']		= array('css/profile.min.css');
-		$data['p_js']		= array('js/profile.min.js','plugins/bootbox/bootbox.min.js','js/ui-bootbox.js','plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js','js/form-wizard.js');
+		$data['p_js']		= array(
+								'js/profile.min.js',
+								'plugins/bootbox/bootbox.min.js',
+								'plugins/jquery-validation/js/jquery.validate.min.js',
+								'plugins/jquery-validation/js/additional-methods.min.js',
+								'plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js',
+								'js/form-wizard.js'
+							);
 		
 		$data['content']    = 'kuesioner_'.$name;
 		$this->load->view('main',$data);
