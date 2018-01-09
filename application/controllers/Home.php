@@ -43,7 +43,7 @@ class Home extends CI_Controller {
 		$program = $this->session->userdata('program');
 		
 		$data['profil']	= $this->Karyasiswa_model->get("p.id_peserta = '$id'")->row();
-		$data['kuesioner'] = $this->Kuesioner_model->get("id_seleksi = '$id_seleksi' AND id_kategori_kuesioner = '2' AND program LIKE '%$program%'");
+		$data['kuesioner'] = $this->Kuesioner_model->get("id_kategori_kuesioner = '2' AND program LIKE '%$program%'");
 		$data['content']    = 'dashboard';
 
 		$data['p_css']		= array('css/profile.min.css');
